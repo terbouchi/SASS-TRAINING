@@ -1,0 +1,142 @@
+$color-blue: hsl(223, 87%, 63%);
+$pale-blue: hsl(223, 100%, 88%);
+$light-red: hsl(354, 100%, 66%);
+$gray: hsl(0, 0%, 59%);
+$dark-blue: hsl(209, 33%, 12%);
+$color-silver: silver;
+$width-responsive: 600px;
+@mixin input {
+    padding: 10px;
+    width: 400px;
+    height: 40px;
+    border: none;
+    border: solid 1px gray;
+    border-radius: 30px;
+}
+
+@mixin button {
+    padding: 10px;
+    width: 150px;
+    height: 60px;
+    border-radius: 30px;
+    color: honeydew;
+    border: none;
+    border: solid 1px gray;
+    background-color: $color-blue;
+    margin-left: 15px;
+}
+
+body {
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 90px;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+    font-weight: normal;
+    &__soon {
+        &--main {
+            color: $gray;
+            font-weight: normal;
+            width: 10px;
+        }
+    }
+    h3 {
+        
+        font-weight: normal;
+        margin-bottom: 30px;
+    }
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    &__input {
+        &--email {
+            @include input
+        }
+    }
+    &__button {
+        &--submit {
+            @include button
+        }
+    }
+}
+
+.dash {
+    display: flex;
+    justify-content: center;
+    &__img {
+        width: $width-responsive*1.3;
+        height: auto;
+        margin-top: 70px;
+    }
+}
+
+#social {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    margin-top: 80px;
+    .fab {
+        margin-left: 20px;
+        color: $color-blue;
+        border-radius: 80%;
+        padding: 7px;
+        border: 1px solid $color-blue;
+    }
+}
+
+h4 {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    color: $gray;
+    margin-top: 60px;
+    font-weight: normal;
+}
+
+footer {
+    .attribution {
+        color: $color-blue;
+        a {
+            text-decoration: none;
+            color: $color-blue;
+        }
+    }
+}
+
+@media only screen and (max-width:$width-responsive) {
+    .form {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        &__button {
+            &--submit {
+                width: $width-responsive/1.4;
+                margin-left: -5px;
+                margin-top: 20px;
+            }
+        }
+    }
+    .dash {
+        &__img {
+            width: 50%;
+        }
+    }
+}

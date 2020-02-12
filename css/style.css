@@ -1,0 +1,130 @@
+body {
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 90px;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+    font-weight: normal;
+}
+
+.container__soon--main {
+    color: #969696;
+    font-weight: normal;
+}
+
+.container h3 {
+    font-size: 1em;
+    font-weight: normal;
+    margin-bottom: 35px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+.form__input--email {
+    padding: 10px;
+    width: 400px;
+    height: 40px;
+    border: none;
+    border: solid 1px gray;
+    border-radius: 30px;
+}
+
+.form__button--submit {
+    padding: 10px;
+    width: 150px;
+    height: 60px;
+    border-radius: 30px;
+    color: honeydew;
+    border: none;
+    border: solid 1px gray;
+    background-color: #4f7df3;
+    margin-left: 15px;
+}
+
+.dash {
+    display: flex;
+    justify-content: center;
+}
+
+.dash__img {
+    width: 800px;
+    height: 500px;
+    margin-top: 70px;
+}
+
+#social {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 80px;
+}
+
+#social .fab {
+    margin-left: 10px;
+    margin-right: 15px;
+    color: #4f7df3;
+    border-radius: 50%;
+    padding: 8px;
+    border: 1px solid #4f7df3;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 1px;
+    margin-block-end: 1px;
+}
+
+h4 {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    color: #969696;
+    margin-top: 60px;
+    font-weight: normal;
+}
+
+footer .attribution {
+    color: #4f7df3;
+}
+
+footer .attribution a {
+    text-decoration: none;
+    color: #4f7df3;
+}
+
+@media only screen and (max-width: 600px) {
+    .form {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+    .form__button--submit {
+        width: 428.57143px;
+        margin-left: -5px;
+        margin-top: 20px;
+    }
+    .dash__img {
+        width: 480px;
+        height: 350px;
+    }
+}
